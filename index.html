@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/principal.css">
     <style>
         .row {
             /*width: 400px;*/
@@ -19,6 +20,11 @@
                 /*width: 400px;*/
                 display: grid;
                 grid-template-columns: 60% 40%;
+            }
+            .rowInverted {
+                /*width: 400px;*/
+                display: grid;
+                grid-template-columns: 40% 60%;
             }
         } 
         .item-col-a{
@@ -54,18 +60,36 @@
         <h1>WWF</h1>
         <p>The World Wide Fund for Nature (WWF) is....</p>
     </section>
-    <section>
-        <h1>WWF</h1>
-        <p>The World Wide Fund for Nature (WWF) is....</p>
+    <section id="contato" class="contato">
+        <h2>Entre em Contato com a gente!</h2>
+        <div class="row">
+            <div>
+                <i class="fa fa-map-marker" style="width:30px"></i> Rio Grande, RS<br>
+                <i class="fa fa-phone" style="width:30px"></i> Telfone: +55 53 98123-1915<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+            </div>
+            <div>
+                <form>
+                    <input class="" type="text" placeholder="Name" required="" name="nome">
+                    <input class="" type="text" placeholder="Email" required="true" name="email">
+                    <input class="" type="text" placeholder="Name" required="true" name="mensagem">
+                    <button class="" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
     </section>
-    <footer>
-        <section>
+
+    <footer class="foot" id="footer">
+        <section class="foot-icons">
             <i class="fa fa-facebook-official"></i>
             <i class="fa fa-instagram"></i>
             <i class="fa fa-snapchat"></i>
             <i class="fa fa-pinterest-p"></i>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-linkedin"></i>
+        </section>
+        <section class="fontPowered">
+            <p>By Magano Creativs</p>
         </section>
     </footer>
 </body>
