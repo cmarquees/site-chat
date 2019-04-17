@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/principal.css">
     <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+        body {font-size: 16px;}
+        img {margin-bottom: -8px;}
+        .mySlides {display: none;}
+    </style>
+    <style>
         .row {
             /*width: 400px;*/
             display: grid;
@@ -40,12 +46,18 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#">HTML</a> |
-            <a href="#">CSS</a> |
-            <a href="#">JavaScript</a> |
-            <a href="#">jQuery</a>
-        </nav>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#clients">Our Clients</a></li>  
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="container">
+            <img src="imgs/app.jpg" alt="Snow">
+            <button class="btn">Button</button>
+        </div>
+
+        
         <h1>Most important heading here</h1>
         <h3>Less important heading here</h3>
         <p>Some additional information here</p>
@@ -53,7 +65,11 @@
     <section>
         <div class="row">
             <div class="item-col-a">A</div>
-            <div class="item-col-b">B</div>
+            <div class="item-col-b">
+                    <div class="container">
+                        <img src="imgs/app2.jpg" alt="Snow">
+                    </div>
+            </div>
         </div>
     </section>
     <section>
